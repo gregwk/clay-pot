@@ -1,0 +1,40 @@
+Title: README
+Description: Read-me file for Clay-Pot git repository
+Author: Gregory Kulczycki
+Date: October 31, 2012
+
+The Clay-Pot repository contains code for a text-based adventure system written in Scala.
+
+# Adventure
+This directory contains an executable in advent/Adventure. It brings up a simple game as a proof-of-concept. In this game, you can:
+
+look
+go north
+go south
+
+You can attempt other commands and the parser should give you sensible error messages. In addition, you can type the following meta-commands:
+
+size: [font-size] (only takes a single digit)
+font: [font-name]
+color: [font-color]
+show: [game-object]
+tree: [root-object] (type tree: root to see the entire object tree)
+
+# Collection
+This directory contains the keyed-tree data structure. A keyed tree is a tree that contains key-value pairs. All keys must be unique.
+
+# Game Editor
+This directory contains the beginnings of what will be the game editor GUI for new game authors. At this point, you can get an idea of what the forms will look like by running GameEditor, ObjectEditor, and ResponseEditor.
+
+# Requirements
+- Both the Adventure code and the Game_Editor code require the Collection code.
+- Java 6
+- Scala 2.9.2
+- JUnit 4
+- Scalatest 1.2
+
+# Notes
+I am developing this project in Eclipse (currently Indigo), using the Scala plugin. I use EGit for version control and for pushing the source to GitHub.
+
+#License
+All code in this repository is open source in accordance with the LICENSE file.
